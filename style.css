@@ -1,0 +1,80 @@
+*{
+    margin:0      ;
+    padding:0 ;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+input{
+    height:45px ;
+    width: 100%;
+    color: #3b5983;
+    font-size: 14px;
+    line-height: 16px;
+    border: 2px solid #E9f2ff;
+    border-radius: 5px ;
+    padding-left: 25px;
+}
+
+
+.register-form-container{
+    max-width: 415px;
+    background-color: #FFFF;
+    box-shadow:0 px 6px 50px rgba(217, 229, 255, alpha) ;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 38px;
+    padding-bottom: 38px;
+}
+.font-title{
+    color: #30507D;
+    font-weight:500 ;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 38px;
+
+
+} 
+.form-field{
+    margin-bottom:  13px; ;
+}
+.buttion{
+    font-size: bold;
+    font-size: 14px;
+    display: block;
+    height: 45px;
+    background-color: #247FFF;
+    border-radius: 5px;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 45px;
+    cursor:pointer ;
+}
+.butti:hover{
+    background-color: #0D6cf2;
+}
+a.buttion{
+    text-decoration: none;
+}
+.button-google{
+    color:#C6CFDC;
+    background: #F2F6FF;
+
+}
+.button-google{
+    background-color: #E2E6F0;
+    color: #FFF;
+}
+.devider{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #405D87;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
+}

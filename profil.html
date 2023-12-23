@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница Пользователя</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #666;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #444;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        #userDetails {
+            margin: 20px;
+        }
+
+        #chartContainer {
+            margin-top: 20px;
+        }
+
+        canvas {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <!-- Подключение библиотеки Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Страница Пользователя</h1>
+    </header>
+    <nav>
+        <a href="#">Главная</a>
+        <a href="#">Форумы</a>
+        <a href="#">Профиль</a>
+        <a href="#">Выход</a>
+    </nav>
+    <section>
+        <div id="userDetails">
+            <h2>Имя пользователя: John Doe</h2>
+            <p>Статус: Активен</p>
+            <p>Дата регистрации: 01.01.2023</p>
+        </div>
+        <div id="chartContainer">
+            <h2>Время на форуме</h2>
+            <canvas id="timeChart"></canvas>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 Страница Пользователя</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Данные для диаграммы
+            var timeData = {
+                labels: ["День 1", "День 2", "День 3", "День 4", "День 5"],
+                datasets: [{
+                    label: 'Время на форуме (в минутах)',
+                    data: [60, 120, 90, 150, 180],
+                    backgroundColor: 'rgba(52, 152, 219, 0.5)',
+                    borderColor: 'rgba(52, 152, 219, 1)',
+                    bor
